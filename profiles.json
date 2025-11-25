@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profiles - Dating Connection International</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Dating Connection International</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="profiles.html" class="active">Profiles</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section class="profiles-hero">
+    <h1>Meet Our Verified Singles</h1>
+    <p>All profiles below have been verified for authenticity and readiness to connect.</p>
+  </section>
+
+  <section class="profiles-grid">
+    <!-- Profile Card 1 -->
+    <div class="profile-card">
+      <img src="images/profile1.jpg" alt="Profile 1" />
+      <h3>Anna, 26</h3>
+      <p>Nairobi, Kenya</p>
+      <p class="bio">Loves traveling, cooking, and deep conversations. Looking for a serious partner.</p>
+      <a href="questionnaire.html?profile=anna26" class="btn">I'm Interested</a>
+    </div>
+
+    <!-- Profile Card 2 -->
+    <div class="profile-card">
+      <img src="images/profile2.jpg" alt="Profile 2" />
+      <h3>Michael, 31</h3>
+      <p>Kisumu, Kenya</p>
+      <p class="bio">Adventurous, calm, and family-oriented. Ready for genuine love.</p>
+      <a href="questionnaire.html?profile=michael31" class="btn">I'm Interested</a>
+    </div>
+
+    <!-- Profile Card 3 -->
+    <div class="profile-card">
+      <img src="images/profile3.jpg" alt="Profile 3" />
+      <h3>Sarah, 29</h3>
+      <p>Mombasa, Kenya</p>
+      <p class="bio">Beach lover, honest, caring, and career-driven. Looking for stability and affection.</p>
+      <a href="questionnaire.html?profile=sarah29" class="btn">I'm Interested</a>
+    </div>
+
+    <!-- Profile Card 4 -->
+    <div class="profile-card">
+      <img src="images/profile4.jpg" alt="Profile 4" />
+      <h3>James, 34</h3>
+      <p>Nakuru, Kenya</p>
+      <p class="bio">Confident, funny, and hardworking. Values loyalty and communication.</p>
+      <a href="questionnaire.html?profile=james34" class="btn">I'm Interested</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dating Connection International. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
