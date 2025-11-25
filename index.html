@@ -1,859 +1,284 @@
-<!--
-Project: DatingConnectionInternational - Static Site
-Files included below are separated by clear markers: <!-- FILE: path -->
-Drop each section into the corresponding file when deploying. This is a single-file bundle for easy copy/paste.
--->
-
-<!-- FILE: index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Dating Connection International — Find Real Connections</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Real Connections — Dating Connection International</title>
   <meta name="description" content="Human-first matchmaking. Complete a short questionnaire and our team will contact you on WhatsApp to finalize your match. Worldwide.">
-  <link rel="stylesheet" href="/assets/style.css">
-  <meta property="og:title" content="Dating Connection International">
-  <meta property="og:description" content="Human-first matchmaking. Complete a short questionnaire and our team will contact you on WhatsApp.">
+  <meta property="og:title" content="Find Real Connections — Dating Connection International">
+  <meta property="og:description" content="Human-first matchmaking. Complete a short questionnaire and our team will contact you on WhatsApp to finalize your match.">
   <meta property="og:image" content="/assets/images/og-image.jpg">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="/index.html">Dating<span class="accent">Connection</span></a>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/profiles.html">Singles</a>
-        <a href="/questionnaire.html" class="btn btn-primary">Start Matching</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Find Your Perfect Match — Anywhere in the World</h1>
-          <p>Discover genuine singles and start your journey to a real connection. Answer a short questionnaire and our team will contact you via WhatsApp to finalize the details.</p>
-          <p class="hero-ctas">
-            <a class="btn btn-primary" href="/questionnaire.html">Start Matching</a>
-            <a class="btn btn-ghost" href="/profiles.html">View Singles</a>
-          </p>
-        </div>
-        <div class="hero-image" aria-hidden="true">
-          <img src="/assets/images/hero.jpg" alt="Couple walking in park">
-        </div>
-      </div>
-    </section>
-
-    <section class="features container">
-      <ul class="feature-grid">
-        <li><strong>Verified Matching</strong><span>Profiles are reviewed by our team.</span></li>
-        <li><strong>Real Singles</strong><span>No fake accounts — human verification.</span></li>
-        <li><strong>Personalized Questionnaire</strong><span>Short, focused, and effective.</span></li>
-        <li><strong>WhatsApp Finalization</strong><span>Quick personal chat to confirm details.</span></li>
-        <li><strong>Global Reach</strong><span>Connect with singles worldwide.</span></li>
-      </ul>
-    </section>
-
-    <section class="how container">
-      <h2>How It Works</h2>
-      <div class="steps">
-        <div class="step"> <strong>1</strong> <p>Explore singles and learn about the process.</p></div>
-        <div class="step"> <strong>2</strong> <p>Complete a short questionnaire (3–5 minutes).</p></div>
-        <div class="step"> <strong>3</strong> <p>Our team reviews your answers & suggests matches.</p></div>
-        <div class="step"> <strong>4</strong> <p>We contact you on WhatsApp to finalize details.</p></div>
-      </div>
-    </section>
-
-    <section class="featured container">
-      <h2>Meet Some of Our Singles</h2>
-      <div class="card-grid" id="profile-preview">
-        <!-- Profile cards will be rendered here from profiles.json by script.js -->
-      </div>
-      <p class="center"><a class="btn btn-primary" href="/profiles.html">See all singles</a></p>
-    </section>
-
-    <section class="cta container">
-      <h2>Ready to Find Your Match?</h2>
-      <p>Start your journey now — it takes only a few minutes.</p>
-      <p><a class="btn btn-primary" href="/questionnaire.html">Start Your Journey</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h3>Dating Connection</h3>
-        <p>Human-first matchmaking. We respect your privacy.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/profiles.html">Singles</a></li>
-          <li><a href="/questionnaire.html">Start Matching</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>WhatsApp: +254 707 775 336</p>
-        <p>Email: datingconnectioninternational@gmail.com</p>
-      </div>
-    </div>
-    <div class="container footer-bottom">© <span id="year"></span> Dating Connection International. All rights reserved.</div>
-  </footer>
-
-  <script src="/assets/script.js" defer></script>
-</body>
-</html>
-
-
-<!-- FILE: about.html -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>About — Dating Connection International</title>
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="/index.html">Dating<span class="accent">Connection</span></a>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/profiles.html">Singles</a>
-        <a href="/questionnaire.html" class="btn btn-primary">Start Matching</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="page-hero">
-      <h1>About Dating Connection International</h1>
-      <p>We are a human-first matchmaking service connecting single adults around the world. Our process combines a concise questionnaire with hands-on review by our matching team, followed by a WhatsApp call to finalize details. Privacy, safety, and authenticity are at the heart of everything we do.</p>
-    </section>
-
-    <section class="mission">
-      <h2>Our Mission</h2>
-      <p>To create a simple and effective matchmaking experience that values honesty, privacy, and genuine connection. We focus on quality over quantity and provide a human-reviewed matchmaking service.</p>
-    </section>
-
-    <section class="why">
-      <h2>Why This System Works</h2>
-      <ul class="why-list">
-        <li>No endless swiping — meaningful questions that matter.</li>
-        <li>Human verification to reduce fake accounts.</li>
-        <li>Personalized matches reviewed by our team.</li>
-        <li>Final WhatsApp confirmation for clarity and trust.</li>
-      </ul>
-    </section>
-
-    <section class="process">
-      <h2>Our Matching Process</h2>
-      <ol>
-        <li><strong>Explore:</strong> Browse profiles and learn how we work.</li>
-        <li><strong>Questionnaire:</strong> Complete a short, structured form.</li>
-        <li><strong>Review:</strong> Our team reviews responses and suggests matches.</li>
-        <li><strong>WhatsApp:</strong> We contact you to finalize details.</li>
-      </ol>
-    </section>
-
-    <section class="cta">
-      <p>Ready to begin?</p>
-      <p><a class="btn btn-primary" href="/questionnaire.html">Start Matching</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h3>Dating Connection</h3>
-        <p>Human-first matchmaking. We respect your privacy.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/profiles.html">Singles</a></li>
-          <li><a href="/questionnaire.html">Start Matching</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>WhatsApp: +254 707 775 336</p>
-        <p>Email: datingconnectioninternational@gmail.com</p>
-      </div>
-    </div>
-    <div class="container footer-bottom">© <span id="year2"></span> Dating Connection International. All rights reserved.</div>
-  </footer>
-  <script src="/assets/script.js" defer></script>
-</body>
-</html>
-
-
-<!-- FILE: profiles.html -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Singles — Dating Connection International</title>
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="/index.html">Dating<span class="accent">Connection</span></a>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/profiles.html">Singles</a>
-        <a href="/questionnaire.html" class="btn btn-primary">Start Matching</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="page-hero">
-      <h1>Meet Genuine Singles Looking for Real Connections</h1>
-      <p>Browse through verified profiles and click on anyone you’re interested in.</p>
-    </section>
-
-    <section class="filters">
-      <div class="container">
-        <input id="search" placeholder="Search by name, tag or city" />
-        <select id="filter-country"><option value="">All countries</option></select>
-        <select id="filter-gender"><option value="">All genders</option><option>Female</option><option>Male</option><option>Non-binary</option></select>
-      </div>
-    </section>
-
-    <section class="profiles container">
-      <div id="profiles-grid" class="card-grid">
-        <!-- Profiles are loaded from profiles.json by script.js -->
-      </div>
-    </section>
-
-    <section class="instructions container">
-      <h2>Can't find someone?</h2>
-      <p>Complete our questionnaire and we will actively look for a compatible match for you.</p>
-      <p><a class="btn btn-primary" href="/questionnaire.html">Start Matching</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h3>Dating Connection</h3>
-        <p>Human-first matchmaking. We respect your privacy.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/profiles.html">Singles</a></li>
-          <li><a href="/questionnaire.html">Start Matching</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>WhatsApp: +254 707 775 336</p>
-        <p>Email: datingconnectioninternational@gmail.com</p>
-      </div>
-    </div>
-    <div class="container footer-bottom">© <span id="year3"></span> Dating Connection International. All rights reserved.</div>
-  </footer>
-  <script src="/assets/script.js" defer></script>
-</body>
-</html>
-
-
-<!-- FILE: questionnaire.html -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Questionnaire — Dating Connection International</title>
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="/index.html">Dating<span class="accent">Connection</span></a>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/profiles.html">Singles</a>
-        <a href="/questionnaire.html" class="btn btn-primary">Start Matching</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <main class="container form-page">
-    <section class="page-hero">
-      <h1>Questionnaire — Tell us about yourself</h1>
-      <p>This questionnaire takes about 3–5 minutes. Your answers help us make better matches. We will contact you on WhatsApp to finalize details.</p>
-    </section>
-
-    <section class="form-area">
-      <div id="progress-wrapper">
-        <div id="progress-label">Progress: <span id="progress-text">0%</span></div>
-        <div id="progress-bar"><div id="progress-fill"></div></div>
-      </div>
-
-      <!-- Multi-step form (client-side) - on submit we open a prefilled Google Form to actually collect/store responses -->
-      <form id="multiForm" class="multi-form" onsubmit="return submitFormToGoogle(event)">
-        <!-- Step 1 -->
-        <fieldset class="form-step">
-          <legend>Basic info</legend>
-          <label>Full name<input name="full_name" required></label>
-          <label>Preferred name (alias)<input name="alias"></label>
-          <label>WhatsApp number (include country code)<input name="whatsapp" placeholder="+2547..." required></label>
-          <label>Age<input name="age" type="number" min="18" required></label>
-          <div class="form-nav">
-            <button type="button" class="btn" data-action="next">Next</button>
-          </div>
-        </fieldset>
-
-        <!-- Step 2 -->
-        <fieldset class="form-step">
-          <legend>Relationship Intentions</legend>
-          <label>What are you looking for?<select name="intentions" required>
-            <option value="Serious relationship">Serious relationship</option>
-            <option value="Marriage">Marriage</option>
-            <option value="Casual dating">Casual dating</option>
-            <option value="Friendship">Friendship</option>
-          </select></label>
-
-          <label>Preferred partner gender<select name="pref_gender" required>
-            <option>Any</option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Non-binary</option>
-          </select></label>
-
-          <div class="form-nav">
-            <button type="button" class="btn" data-action="prev">Previous</button>
-            <button type="button" class="btn" data-action="next">Next</button>
-          </div>
-        </fieldset>
-
-        <!-- Step 3 -->
-        <fieldset class="form-step">
-          <legend>Lifestyle & Preferences</legend>
-          <label>Do you smoke?<select name="smoke" required><option>No</option><option>Occasionally</option><option>Regularly</option></select></label>
-          <label>Do you drink?<select name="drink" required><option>No</option><option>Occasionally</option><option>Socially</option><option>Regularly</option></select></label>
-          <label>Children? <select name="children" required><option>None</option><option>Have children</option><option>Want children soon</option><option>Undecided</option></select></label>
-
-          <div class="form-nav">
-            <button type="button" class="btn" data-action="prev">Previous</button>
-            <button type="button" class="btn" data-action="next">Next</button>
-          </div>
-        </fieldset>
-
-        <!-- Step 4 -->
-        <fieldset class="form-step">
-          <legend>Personality & Interests</legend>
-          <label>Pick up to 5 traits (comma separated)<input name="traits" placeholder="Kind, Adventurous, Humorous"></label>
-          <label>Hobbies & interests (comma separated)<input name="hobbies" placeholder="Hiking, Cooking"></label>
-          <label>Short bio<textarea name="bio" maxlength="300" required></textarea></label>
-
-          <div class="form-nav">
-            <button type="button" class="btn" data-action="prev">Previous</button>
-            <button type="button" class="btn" data-action="next">Next</button>
-          </div>
-        </fieldset>
-
-        <!-- Step 5 -->
-        <fieldset class="form-step">
-          <legend>Final</legend>
-          <label>Top 3 must-haves in a partner<input name="must_haves" required></label>
-          <label>Are you open to long-distance? <select name="long_distance" required><option>No</option><option>Yes</option><option>Maybe</option></select></label>
-          <label><input type="checkbox" name="consent" required> I consent to my information being used for matching and to be contacted via WhatsApp.</label>
-
-          <div class="form-nav">
-            <button type="button" class="btn" data-action="prev">Previous</button>
-            <button type="submit" class="btn btn-primary">Submit & Continue</button>
-          </div>
-        </fieldset>
-      </form>
-
-      <div class="note">
-        <p>Note: After submitting, you will be redirected to a Google Form to complete (and optionally upload a photo). This ensures responses are stored securely.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h3>Dating Connection</h3>
-        <p>Human-first matchmaking. We respect your privacy.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/profiles.html">Singles</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>WhatsApp: +254 707 775 336</p>
-        <p>Email: datingconnectioninternational@gmail.com</p>
-      </div>
-    </div>
-    <div class="container footer-bottom">© <span id="year4"></span> Dating Connection International. All rights reserved.</div>
-  </footer>
-  <script src="/assets/script.js" defer></script>
-</body>
-</html>
-
-
-<!-- FILE: contact.html -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact — Dating Connection International</title>
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="/index.html">Dating<span class="accent">Connection</span></a>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/profiles.html">Singles</a>
-        <a href="/questionnaire.html" class="btn btn-primary">Start Matching</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="page-hero">
-      <h1>Contact Us</h1>
-      <p>We’re here to help. Reach out via WhatsApp, email, or the contact form link below.</p>
-    </section>
-
-    <section class="contact-info container">
-      <h2>Get in touch</h2>
-      <p><strong>WhatsApp:</strong> +254 707 775 336</p>
-      <p><strong>Email:</strong> datingconnectioninternational@gmail.com</p>
-      <p><strong>Contact Form:</strong> <a href="#">Google Form link goes here</a></p>
-      <p><strong>Response time:</strong> We aim to respond within 24 hours, depending on message volume.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h3>Dating Connection</h3>
-        <p>Human-first matchmaking. We respect your privacy.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/profiles.html">Singles</a></li>
-          <li><a href="/questionnaire.html">Start Matching</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>WhatsApp: +254 707 775 336</p>
-        <p>Email: datingconnectioninternational@gmail.com</p>
-      </div>
-    </div>
-    <div class="container footer-bottom">© <span id="year5"></span> Dating Connection International. All rights reserved.</div>
-  </footer>
-  <script src="/assets/script.js" defer></script>
-</body>
-</html>
-
-
-<!-- FILE: privacy.html -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Privacy Policy — Dating Connection International</title>
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="/index.html">Dating<span class="accent">Connection</span></a>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/profiles.html">Singles</a>
-        <a href="/questionnaire.html" class="btn btn-primary">Start Matching</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="page-hero">
-      <h1>Privacy Policy</h1>
-      <p>Your privacy matters. We collect form responses to provide matchmaking services. Contact us to request deletion or updates.</p>
-    </section>
-
-    <section class="policy container">
-      <h2>Information we collect</h2>
-      <p>We collect contact details, questionnaire responses, optional profile photos, and other information you provide via Google Forms.</p>
-
-      <h2>How we use your information</h2>
-      <p>To find compatible matches and to contact you via WhatsApp for final confirmation. We do not sell or share your personal information to third parties.</p>
-
-      <h2>Data retention & deletion</h2>
-      <p>Data is retained for up to 24 months or until you request deletion. To request deletion contact datingconnectioninternational@gmail.com or WhatsApp +254707775336.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h3>Dating Connection</h3>
-        <p>Human-first matchmaking. We respect your privacy.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/profiles.html">Singles</a></li>
-          <li><a href="/questionnaire.html">Start Matching</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>WhatsApp: +254 707 775 336</p>
-        <p>Email: datingconnectioninternational@gmail.com</p>
-      </div>
-    </div>
-    <div class="container footer-bottom">© <span id="year6"></span> Dating Connection International. All rights reserved.</div>
-  </footer>
-  <script src="/assets/script.js" defer></script>
-</body>
-</html>
-
-
-<!-- FILE: terms.html -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Terms & Conditions — Dating Connection International</title>
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="/index.html">Dating<span class="accent">Connection</span></a>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/profiles.html">Singles</a>
-        <a href="/questionnaire.html" class="btn btn-primary">Start Matching</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="page-hero">
-      <h1>Terms & Conditions</h1>
-      <p>These terms apply to use of Dating Connection International. By using the service you agree to these terms.</p>
-    </section>
-
-    <section class="terms container">
-      <h2>Eligibility</h2>
-      <p>You must be 18 years or older to use this service.</p>
-
-      <h2>Service description</h2>
-      <p>We provide a matchmaking service based on user responses and manual review. We do not guarantee matches.</p>
-
-      <h2>Liability</h2>
-      <p>We are not responsible for actions of users. Follow safety guidance when meeting people in person.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h3>Dating Connection</h3>
-        <p>Human-first matchmaking. We respect your privacy.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/profiles.html">Singles</a></li>
-          <li><a href="/questionnaire.html">Start Matching</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>WhatsApp: +254 707 775 336</p>
-        <p>Email: datingconnectioninternational@gmail.com</p>
-      </div>
-    </div>
-    <div class="container footer-bottom">© <span id="year7"></span> Dating Connection International. All rights reserved.</div>
-  </footer>
-  <script src="/assets/script.js" defer></script>
-</body>
-</html>
-
-
-<!-- FILE: admin.html (hidden admin convenience page) -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Admin — Dating Connection International</title>
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-  <main class="container">
-    <h1>Admin</h1>
-    <p>This page is not linked in the site navigation. Use it to quickly access the Google Form and the responses sheet.</p>
-    <ul>
-      <li><a href="#">Open Google Form (edit)</a></li>
-      <li><a href="#">Open Google Sheet (responses)</a></li>
-    </ul>
-    <h2>Profile management</h2>
-    <p>To add a profile, upload image to <code>/assets/profiles/</code> and add entry to <code>/assets/profiles.json</code>.</p>
-  </main>
-</body>
-</html>
-
-
-<!-- FILE: assets/style.css -->
-/* Minimal, clean stylesheet - adjust colors as you wish */
-:root{
-  --primary:#b32e5a;
-  --accent:#ff7ba9;
-  --muted:#666;
-  --bg:#fff;
-  --container:1100px;
-}
-*{box-sizing:border-box}
-body{font-family:Inter,system-ui,Arial,sans-serif;color:#222;margin:0;background:var(--bg);line-height:1.45}
-.container{max-width:var(--container);margin:0 auto;padding:1rem}
-.site-header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:40}
-.header-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 0}
-.logo{font-weight:700;text-decoration:none;color:#222}
-.logo .accent{color:var(--primary)}
-.nav{margin-left:auto;display:flex;gap:1rem;align-items:center}
-.nav a{color:#222;text-decoration:none;padding:.35rem .5rem}
-.nav .btn-primary{background:var(--primary);color:#fff;padding:.5rem .9rem;border-radius:6px;text-decoration:none}
-.nav-toggle{display:none}
-.hero{padding:2.5rem 0;display:flex;align-items:center;gap:2rem}
-.hero-inner{display:flex;align-items:center;gap:2rem}
-.hero-copy h1{font-size:2rem;margin:.2rem 0}
-.hero-copy p{color:var(--muted)}
-.hero-ctas .btn{margin-right:.5rem}
-.btn{display:inline-block;padding:.6rem .9rem;border-radius:8px;text-decoration:none;background:#f3f3f3;color:#222}
-.btn-primary{background:var(--primary);color:#fff}
-.btn-ghost{background:transparent;border:1px solid #eee}
-.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;list-style:none;padding:0;margin:1rem 0}
-.features .feature-grid li{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.03)}
-.how .steps{display:flex;gap:1rem;flex-wrap:wrap}
-.step{flex:1;background:#fff;padding:1rem;border-radius:8px;text-align:center}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-.card{background:#fff;border-radius:8px;padding:1rem;box-shadow:0 4px 18px rgba(0,0,0,0.06)}
-.card img{width:100%;height:200px;object-fit:cover;border-radius:6px}
-.cta{background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff;padding:2rem;border-radius:8px;text-align:center;margin:2rem 0}
-.site-footer{background:#fafafa;border-top:1px solid #eee;padding:2rem 0;margin-top:2rem}
-.footer-inner{display:flex;gap:2rem;flex-wrap:wrap}
-.footer-col{flex:1;min-width:200px}
-.footer-bottom{padding-top:1rem;text-align:center;color:#888}
-.page-hero{padding:2rem 0}
-.filters{padding:.5rem 0}
-#search{padding:.6rem;border:1px solid #ddd;border-radius:6px;width:40%}
-.card-grid .profile-card{display:flex;flex-direction:column}
-.profile-meta{margin-top:.5rem}
-.form-page .form-area{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
-.form-step{display:none;border:0;padding:0;margin:0}
-.form-step.active{display:block}
-.form-nav{display:flex;gap:1rem;margin-top:1rem}
-/* Progress bar */
-#progress-wrapper{margin-bottom:1rem}
-#progress-bar{height:10px;background:#eee;border-radius:10px;overflow:hidden}
-#progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--primary),var(--accent));transition:width .4s}
-@media(max-width:800px){
-  .hero-inner{flex-direction:column}
-  #search{width:100%}
-  .nav{display:none}
-  .nav-toggle{display:block;margin-left:auto}
-}
-
-
-/* small utilities */
-.center{text-align:center}
-strong{color:#222}
-
-
-<!-- EOF style.css -->
-
-
-<!-- FILE: assets/script.js -->
-// Minimal interactive script: mobile nav, profiles loader, multi-step form + prefill to Google Forms
-document.addEventListener('DOMContentLoaded',function(){
-  // set years
-  ['year','year2','year3','year4','year5','year6','year7'].forEach(id=>{const el=document.getElementById(id); if(el) el.textContent=new Date().getFullYear();});
-
-  // mobile nav toggle
-  document.querySelectorAll('.nav-toggle').forEach(btn=>btn.addEventListener('click',()=>{document.querySelector('.nav').classList.toggle('open')}));
-
-  // load profiles preview (fetch profiles.json from assets)
-  fetch('/assets/profiles.json').then(r=>r.json()).then(data=>{
-    // render first 6
-    const preview=document.getElementById('profile-preview');
-    const grid=document.getElementById('profiles-grid');
-    if(preview){data.slice(0,6).forEach(p=>{preview.insertAdjacentHTML('beforeend',profileCardHtml(p))})}
-    if(grid){data.forEach(p=>{grid.insertAdjacentHTML('beforeend',profileCardHtml(p))})}
-
-    // populate country filter once
-    const countries=new Set(data.map(x=>x.country));
-    const filterCountry=document.getElementById('filter-country');
-    if(filterCountry){Array.from(countries).sort().forEach(c=>{filterCountry.insertAdjacentHTML('beforeend',`<option>${c}</option>`)});}
-  }).catch(err=>{console.warn('Could not load profiles.json',err)});
-
-  function profileCardHtml(p){
-    const photo=p.photo||'/assets/images/default-profile.jpg';
-    return `\n      <article class="card profile-card">\n        <img src="${photo}" alt="Profile photo of ${escapeHtml(p.alias)}">\n        <div class="profile-meta">\n          <h3>${escapeHtml(p.alias)}, ${escapeHtml(String(p.age))} — ${escapeHtml(p.city)}</h3>\n          <p>${escapeHtml(p.short_bio)}</p>\n          <p><a class="btn" href="${p.prefill_url||'/questionnaire.html'}">I'm Interested</a></p>\n        </div>\n      </article>\n    `
-  }
-
-  function escapeHtml(s){return String(s).replace(/[&<>"']/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})}
-
-  // Multi-step form
-  const form=document.getElementById('multiForm');
-  if(form){
-    const steps=Array.from(form.querySelectorAll('.form-step'));
-    let idx=0;
-    showStep(idx);
-    form.querySelectorAll('[data-action="next"]').forEach(b=>b.addEventListener('click',()=>{if(validateStep(idx)) idx=Math.min(steps.length-1,idx+1),showStep(idx)}));
-    form.querySelectorAll('[data-action="prev"]').forEach(b=>b.addEventListener('click',()=>{idx=Math.max(0,idx-1);showStep(idx)}));
-
-    function showStep(i){steps.forEach((s,si)=>s.classList.toggle('active',si===i)); updateProgress(Math.round(((i)/(steps.length-1))*100));}
-    function updateProgress(n){const fill=document.getElementById('progress-fill'); const txt=document.getElementById('progress-text'); if(fill) fill.style.width=n+'%'; if(txt) txt.textContent=n+'%'}
-    function validateStep(i){const inputs=steps[i].querySelectorAll('[required]');for(const input of inputs){if(!input.value){input.focus();return false}}return true}
-  }
-
-  // On submit, open prefilled Google Form
-  window.submitFormToGoogle = function(e){
-    e.preventDefault();
-    const formEl=document.getElementById('multiForm');
-    const fd=new FormData(formEl);
-    // Build params to append to Google Form prefill URL - admin must replace FORM_BASE_URL
-    const FORM_BASE_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url';
-    // Map local field names to Google Form entry IDs (admin: update these entry.x values)
-    const mapping = {
-      full_name: 'entry.1000000',
-      alias: 'entry.1000001',
-      whatsapp: 'entry.1000002',
-      age: 'entry.1000003',
-      intentions: 'entry.1000004',
-      pref_gender: 'entry.1000005',
-      smoke: 'entry.1000006',
-      drink: 'entry.1000007',
-      children: 'entry.1000008',
-      traits: 'entry.1000009',
-      hobbies: 'entry.1000010',
-      bio: 'entry.1000011',
-      must_haves: 'entry.1000012',
-      long_distance: 'entry.1000013'
-    };
-
-    const params=[];
-    for(const [k,v] of fd.entries()){
-      if(mapping[k]) params.push(`${encodeURIComponent(mapping[k])}=${encodeURIComponent(v)}`);
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/favicon.png">
+  <style>
+    :root{
+      --bg:#FBF7F8;
+      --card:#ffffff;
+      --primary:#B32E5A; /* deep rose */
+      --accent:#FF7BA9; /* soft pink */
+      --muted:#6B6B6B;
+      --gold:#E6C07C;
+      --radius:14px;
+      --max-width:1100px;
+      --shadow: 0 8px 24px rgba(18,18,18,0.07);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    // optional: include a timestamp
-    params.push('entry.1000099='+encodeURIComponent(new Date().toISOString()));
-    const target = FORM_BASE_URL + '&' + params.join('&');
-    // open in new tab
-    window.open(target,'_blank');
-    // redirect to thanks page
-    window.location.href = '/thanks.html';
-    return false;
-  }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    header{background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff;padding:18px 20px;position:sticky;top:0;z-index:40}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px}
+    .logo .heart{width:36px;height:36px;background:#fff;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;color:var(--primary);font-weight:800}
+    nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
+    nav a{color:#fff;font-weight:600}
+    .cta{background:#fff;color:var(--primary);padding:10px 14px;border-radius:10px;font-weight:700}
 
-});
+    /* HERO */
+    .hero{padding:64px 0;display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center}
+    .hero-left h1{font-size:40px;margin:0 0 12px;line-height:1.05}
+    .hero-left p{margin:0 0 20px;color:var(--muted);font-size:16px}
+    .hero-ctas{display:flex;gap:12px}
+    .btn-primary{background:var(--primary);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700}
+    .btn-outline{background:transparent;border:2px solid rgba(0,0,0,0.06);padding:10px 16px;border-radius:10px}
+    .hero-right{background:linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.95));padding:22px;border-radius:16px;box-shadow:var(--shadow)}
+    .stats{display:flex;gap:14px;flex-wrap:wrap}
+    .stat{background:var(--card);padding:12px;border-radius:12px;min-width:120px;text-align:center}
+    .stat .num{font-weight:700;color:var(--primary);font-size:18px}
 
+    /* HOW IT WORKS */
+    .how{padding:34px 0}
+    .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .how-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+    .how-card h4{margin:0 0 8px}
+    .how-card p{margin:0;color:var(--muted);font-size:14px}
 
-/* EOF script.js */
+    /* FEATURED SINGLES */
+    .profiles{padding:36px 0}
+    .profiles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .profile-card{background:var(--card);padding:16px;border-radius:12px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center}
+    .profile-photo{width:88px;height:88px;border-radius:12px;flex-shrink:0;object-fit:cover}
+    .profile-info h3{margin:0 0 4px;font-size:18px}
+    .profile-info p{margin:0;color:var(--muted);font-size:13px}
+    .profile-actions{margin-top:10px}
+    .btn-small{padding:8px 10px;border-radius:10px;font-weight:700}
 
+    /* BENEFITS */
+    .benefits{display:flex;gap:14px;padding:28px 0}
+    .benefit{background:var(--card);padding:16px;border-radius:12px;flex:1;box-shadow:var(--shadow)}
 
-<!-- FILE: assets/profiles.json -->
-[
-  {"id":"p001","alias":"Maya","age":29,"country":"Kenya","city":"Nairobi","photo":"/assets/profiles/maya_p001.jpg","short_bio":"Teacher who loves hiking and coffee. Family-oriented and looking for a serious relationship.","interests":["Hiking","Baking","Markets"],"looking_for":"28-35, family-oriented, respectful","tags":["Teacher","Outdoorsy","Family-oriented"],"prefill_url":"https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url&entry.111111=p001"},
-  {"id":"p002","alias":"Daniel","age":32,"country":"United Kingdom","city":"London","photo":"/assets/profiles/daniel_p002.jpg","short_bio":"Software engineer and amateur photographer. Enjoys traveling and food culture. Open to long-distance.","interests":["Photography","Travel","Cooking"],"looking_for":"Meaningful connection, open to long-distance","tags":["Engineer","Photographer","Traveller"],"prefill_url":"https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url&entry.111111=p002"}
-]
+    /* CTA strip */
+    .cta-strip{background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff;padding:28px;border-radius:12px;margin:24px 0}
+    .cta-strip .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
 
+    footer{padding:22px 0;color:var(--muted)}
+    .footer-grid{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
-<!-- FILE: thanks.html -->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Thanks — Dating Connection International</title>
-  <link rel="stylesheet" href="/assets/style.css">
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .profiles-grid{grid-template-columns:repeat(2,1fr)}
+      .how-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      nav ul{display:none}
+      .profiles-grid{grid-template-columns:1fr}
+      .how-grid{grid-template-columns:1fr}
+      .hero-left h1{font-size:28px}
+    }
+  </style>
 </head>
 <body>
-  <main class="container center" style="padding:3rem">
-    <h1>Thank you — we received your submission</h1>
-    <p>Our team will review your responses and contact you on WhatsApp within 48–72 hours for final touches.</p>
-    <p><a class="btn btn-primary" href="/profiles.html">Browse Singles</a></p>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="heart">❤</div>
+        <div>
+          Dating Connection <br><small style="opacity:.9">International</small>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/profiles.html">Singles</a></li>
+          <li><a class="cta" href="/questionnaire.html">Start Matching</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Find Your Perfect Match — Anywhere in the World</h1>
+        <p>Discover genuine singles and start your journey to a real connection. Answer a short questionnaire and our team will contact you on WhatsApp to finalize the details.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="/questionnaire.html">Start Matching</a>
+          <a class="btn-outline" href="/profiles.html">Browse Singles</a>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-hidden="false">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">Trusted worldwide</div>
+            <div style="font-weight:700;font-size:18px">2,500+ signups</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:13px;color:var(--muted)">Avg response time</div>
+            <div style="font-weight:700;font-size:18px">48-72 hrs</div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="num">Verified</div>
+            <div style="font-size:12px;color:var(--muted)">Profiles reviewed</div>
+          </div>
+          <div class="stat">
+            <div class="num">Worldwide</div>
+            <div style="font-size:12px;color:var(--muted)">Global reach</div>
+          </div>
+          <div class="stat">
+            <div class="num">Private</div>
+            <div style="font-size:12px;color:var(--muted)">Phone kept private</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <h2 style="margin:0">How it works</h2>
+        <div style="color:var(--muted);font-size:14px">Simple. Human. Safe.</div>
+      </div>
+      <div class="how-grid">
+        <div class="how-card">
+          <h4>1. Complete the questionnaire</h4>
+          <p>Answer a few focused questions so we can understand your values and preferences.</p>
+        </div>
+        <div class="how-card">
+          <h4>2. We review & match</h4>
+          <p>Our team manually reviews answers and suggests compatible profiles.</p>
+        </div>
+        <div class="how-card">
+          <h4>3. Finalize via WhatsApp</h4>
+          <p>We contact you on WhatsApp to confirm details and arrange introductions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED SINGLES -->
+    <section class="profiles">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <h2 style="margin:0">Meet a few of our singles</h2>
+        <a href="/profiles.html" style="font-weight:700;color:var(--primary)">See all singles →</a>
+      </div>
+
+      <div class="profiles-grid" aria-live="polite">
+
+        <!-- Profile 1 -->
+        <article class="profile-card" role="article" aria-label="Maya, 29 — Nairobi">
+          <img class="profile-photo" src="/assets/profiles/maya_p001.jpg" alt="Maya profile photo">
+          <div class="profile-info">
+            <h3>Maya, 29</h3>
+            <p>Teacher • Loves hiking • Family-oriented</p>
+            <div class="profile-actions">
+              <a class="btn-small" href="/profiles.html#p001">View Profile</a>
+              <a class="btn-small" style="margin-left:8px;background:var(--gold);color:#fff;border-radius:8px;padding:8px 10px;font-weight:700" href="/questionnaire.html">I'm Interested</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile 2 -->
+        <article class="profile-card" role="article" aria-label="Daniel, 32 — London">
+          <img class="profile-photo" src="/assets/profiles/daniel_p002.jpg" alt="Daniel profile photo">
+          <div class="profile-info">
+            <h3>Daniel, 32</h3>
+            <p>Software engineer • Photographer • Traveler</p>
+            <div class="profile-actions">
+              <a class="btn-small" href="/profiles.html#p002">View Profile</a>
+              <a class="btn-small" style="margin-left:8px;background:var(--gold);color:#fff;border-radius:8px;padding:8px 10px;font-weight:700" href="/questionnaire.html">I'm Interested</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile 3 -->
+        <article class="profile-card" role="article" aria-label="Lila, 27 — Helsinki">
+          <img class="profile-photo" src="/assets/profiles/lila_p003.jpg" alt="Lila profile photo">
+          <div class="profile-info">
+            <h3>Lila, 27</h3>
+            <p>Graphic designer • Art lover • Cat person</p>
+            <div class="profile-actions">
+              <a class="btn-small" href="/profiles.html#p003">View Profile</a>
+              <a class="btn-small" style="margin-left:8px;background:var(--gold);color:#fff;border-radius:8px;padding:8px 10px;font-weight:700" href="/questionnaire.html">I'm Interested</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+      <div class="benefit">
+        <h4>Privacy-first</h4>
+        <p style="color:var(--muted)">Your phone number is only visible to our matching team and is not published publicly without consent.</p>
+      </div>
+      <div class="benefit">
+        <h4>Human-reviewed</h4>
+        <p style="color:var(--muted)">Our team checks profiles and responses to ensure real, respectful members.</p>
+      </div>
+      <div class="benefit">
+        <h4>Worldwide</h4>
+        <p style="color:var(--muted)">We connect singles across countries and cultures with respect and discretion.</p>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="cta-strip">
+      <div class="cta-inner container">
+        <div>
+          <h3 style="margin:0">Ready to Find Your Match?</h3>
+          <p style="margin:6px 0 0;opacity:.95">Start now — it only takes 3–5 minutes to get started.</p>
+        </div>
+        <div>
+          <a class="btn-primary" href="/questionnaire.html">Start Your Journey</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div style="min-width:220px">
+        <strong>Dating Connection International</strong>
+        <div style="margin-top:6px;color:var(--muted)">Connect with real people, respectfully.</div>
+      </div>
+
+      <div>
+        <div style="font-weight:700">Contact</div>
+        <div style="color:var(--muted);margin-top:6px">WhatsApp: +254 707 775 336</div>
+        <div style="color:var(--muted);">Email: datingconnectioninternational@gmail.com</div>
+      </div>
+
+      <div>
+        <div style="font-weight:700">Quick Links</div>
+        <div style="margin-top:6px;color:var(--muted)"><a href="/about.html">About</a> • <a href="/profiles.html">Singles</a> • <a href="/questionnaire.html">Start Matching</a></div>
+      </div>
+
+      <div style="text-align:right;min-width:160px">
+        <div style="font-weight:700">Legal</div>
+        <div style="margin-top:6px;color:var(--muted)"><a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
-
-
-<!-- FILE: README.md -->
-# Dating Connection International — Static Site
-
-This repo contains a production-ready static site for Dating Connection International. Edit `assets/profiles.json` to add profiles. Replace placeholder FORM IDs in `assets/script.js` with your Google Form entry IDs.
-
-## Quick setup
-1. Replace `YOUR_FORM_ID` and the `entry.` mapping in `/assets/script.js` with your real Google Form IDs.
-2. Upload profile images to `/assets/profiles/` and update `assets/profiles.json`.
-3. Push the files to GitHub and enable Pages on the `main` branch.
-
-## Notes
-- The questionnaire collects answers client-side and redirects user to a prefilled Google Form for final storage (photo upload). Update mapping carefully.
-
-<!-- EOF README.md -->
-
