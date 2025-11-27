@@ -1,14 +1,95 @@
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const iframe = document.querySelector("iframe");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – Dating Connection</title>
 
-    iframe.onload = function () {
-        let inputPage = iframe.contentWindow.document.querySelector("form");
-        let thankYouPage = iframe.contentWindow.document.querySelector("div.freebirdFormviewerViewResponseConfirmationMessage");
+  <!-- Auto-Redirect to WhatsApp after 4 seconds -->
+  <meta http-equiv="refresh" content="4; URL=https://wa.me/message/IQU6CTYPM7KIB1" />
 
-        if (!inputPage && thankYouPage) {
-            window.location.href = "https://wa.me/message/IQU6CTYPM7KIB1";
-        }
-    };
-});
-</script>
+  <!-- Styles -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #ff4f81, #ff9966);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255,255,255,0.1);
+      padding: 40px 30px;
+      border-radius: 16px;
+      width: 95%;
+      max-width: 500px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .loader {
+      border: 5px solid rgba(255,255,255,0.3);
+      border-top: 5px solid #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 20px auto;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .redirect-text {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Thank You! ❤️</h1>
+    <p>Your information has been submitted successfully.</p>
+    <p>You will now be redirected to WhatsApp for final verification.</p>
+
+    <div class="loader"></div>
+
+    <p class="redirect-text">
+      If you are not redirected automatically, <br>
+      <a href="https://wa.me/message/IQU6CTYPM7KIB1">click here to go to WhatsApp</a>.
+    </p>
+  </div>
+</body>
+</html>
